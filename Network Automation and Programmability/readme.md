@@ -58,6 +58,37 @@
 * Network admins will need to become familiar with Server OS, installation, patching and troubleshooting.
 
 # SDN & Automation
+## Traditional Networks vs Controller Based Networks
+|Traditional Networks|Controller Based Networks|
+|--------------------|-------------------------|
+|Box-by-Box Management|Dynamic and automatic updates/changes to config based on preconfigured policies|
+|CLI-Driven||
+|Extensive use of Telnet,SSH,HTTP or SNMP||
+|Networking functions implemented in individual devices using vendor proprietary ASICs(Application Specific ICs)|Control Plane functionality to a central SDN Controller|
+|Devices start out with minimal or no initial configs|Dynamic implementation of initial configurations (PnP or zero-touch config)|
+|Multiple disparate serverse for network management|Controllers consolidate mulitple management services into a box|
+
+### Definition
+* Control Plane : 
+* Data Plane : 
+
+## 2 Approaches in SDN : 
+### Imperative Approach
+* Control plane logic resides in the controller
+* Controller has complete control over programming the forwarding path of devices.
+
+### Declarative Approach
+* Control plane logic resides within the networking devices
+* Controller 'declares' the requirements of applications and Network devices decide how to translate that into functional actions.
+
+## Considerations for Including SDN Controller's into Network Design
+* Hardware selected must understand the controller's protocol (Most Important!!!)
+* Redundant paths to/from controller should exist
+* If datacenters are geographically dispersed, one must plan for controller reachability
+* Controllers should be configured in clusters for redundancy
+* Security as now, router controls are centralised.
+* Training for Staff/Team
+
 # DNA Center
 # REST
 # Network Automation Tools
